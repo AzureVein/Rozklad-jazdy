@@ -1,29 +1,28 @@
 <input type="button" id="1" value="button 1" onclick="myFunction(this.id)" ;>
-<div id="list1" style="display:none;">
+<p id="list1" style="display:none;">
     polanow<br>
     koszalin
-</div>
-
+</p>
+<br>
 <input type="button" id="2" value="button 2" onclick="myFunction(this.id)" ;>
-<div id="list2" style="display:none;">
+<p id="list2" style="display:none;">
     polanow2<br>
     koszalin2
-</div>
-
+</p>
+<br>
 <input type="button" id="3" value="button 3" onclick="myFunction(this.id)" ;>
-<div id="list3" style="display:none;">
+<p id="list3" style="display:none;">
     polano3<br>
     koszalin3
-</div>
+</p>
 
 <script>
-    function myFunction(y) {
-      var x = "list"+y;
-      var z = document.getElementById(x);
-       if (z.style.display === "none") {
-            z.style.display = "block";
+    function myFunction(x) {
+        var y = document.getElementById("list" + x);
+        if (y.style.display === "none") {
+            y.style.display = "block";
         } else {
-            z.style.display = "none";
+            y.style.display = "none";
         }
     }
 </script>
